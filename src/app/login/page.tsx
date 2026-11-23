@@ -1,4 +1,4 @@
-import { Lamp } from "@/components/Lamp";
+import { Logo } from "@/components/Logo";
 import { LoginForm } from "./LoginForm";
 
 export const metadata = { title: "Sign in" };
@@ -11,7 +11,7 @@ export default async function LoginPage({ searchParams }: { searchParams: Promis
         <svg className="ecg" viewBox="0 0 600 60" preserveAspectRatio="none" aria-hidden="true">
           <path d="M0 32h170l12-14 10 30 12-44 12 50 10-22h130l10-10 10 18 8-8h206" />
         </svg>
-        <Lamp size={56} />
+        <Logo size={56} />
         <h1>F.I. College of Nursing</h1>
         <p>One campus. Every student, fee, class and clinical hour in one place.</p>
       </section>

@@ -1,4 +1,4 @@
-import { Lamp } from "@/components/Lamp";
+import { Logo } from "@/components/Logo";
 import { getProfile } from "@/lib/session";
 import { navFor, ROLE_LABEL } from "@/lib/roles";
 import { Sidebar } from "./Sidebar";
@@ -9,7 +9,7 @@ export default async function AppLayout({ children }: { children: React.ReactNod
   if (!profile) {
     return (
       <main className="empty-state">
-        <Lamp size={48} />
+        <Logo size={48} />
         <h1>Your account isn&apos;t set up yet</h1>
         <p>You&apos;re signed in, but the college office hasn&apos;t given you a role. Ask them to add you, then sign in again.</p>
         <form action="/auth/signout" method="post">
@@ -30,7 +30,7 @@ export default async function AppLayout({ children }: { children: React.ReactNod
     <div className="shell">
       <aside className="sidebar">
         <div className="brand">
-          <Lamp />
+          <Logo />
           <div>
             <strong>FI Campus</strong>
             <span>College of Nursing</span>
